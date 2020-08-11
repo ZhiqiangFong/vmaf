@@ -59,6 +59,7 @@ test_feature_extractor = executable('test_feature_extractor',
       convolution_and_psnr_avx_static_lib.extract_all_objects(),
       libvmaf_feature_static_lib.extract_all_objects(),
       libvmaf_rc_feature_static_lib.extract_all_objects(),
+      libvmaf_rc_cpu_static_lib.extract_all_objects(),
     ]
 )
 
