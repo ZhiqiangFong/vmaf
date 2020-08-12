@@ -62,7 +62,7 @@ int vmaf_init(VmafContext **vmaf, VmafConfiguration cfg)
     v->cfg = cfg;
 
     vmaf_init_cpu();
-    vmaf_set_cpu_flags_mask(~cfg.cpumask);
+    vmaf_set_cpu_flags_mask(cfg.cpumask);
 
     err = vmaf_feature_collector_init(&(v->feature_collector));
     if (err) goto free_v;
